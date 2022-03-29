@@ -8,5 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name = 'Gnomo';
   age = 36;
-  img = 'https://source.unsplash.com/random'
+  img = 'https://source.unsplash.com/random';
+  btnDisabled = true;
+  person = {
+    name: 'Gnomo',
+    age: 36,
+    avatar : 'https://source.unsplash.com/random',
+    btnDisabled : true,
+  }
 }
