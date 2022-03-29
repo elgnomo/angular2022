@@ -1,11 +1,20 @@
+<h1>NgModel</h1>
+<p>Nombre {{person.name}}</p>
+<input type="text" [(ngModel)]="person.name" #nameInput="ngModel" required/>
+<p>Valid:{{nameInput.valid}}</p>
+<hr/>
+<p>Edad {{person.age}}</p>
+<input type="number" [(ngModel)]="person.age" #ageInput="ngModel" required max="18" min="5"/>
+<p>Valid:{{ageInput.valid}}</p>
+<hr/>
 <!-- Event Binding Listener-->
 <h1>Eventos 2</h1>
 <div class="box" (scroll)="onScroll($event)">
   <p>Parrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomo gnomo  gnomo gnomo gnomo gnomo gnomo gnomo gnomo gnomo gnomo gnomo gnomo gnomo</p>
 </div>
-
 <p>Nombre {{person.name}}</p>
 <input type="text" [value]="person.name" (keyup)="changeName($event)">
+<hr/>
 <!-- Event Binding -->
 <h1>Eventos</h1>
 <button [disabled]="btnDisabled">Enviar Gnomo</button>
