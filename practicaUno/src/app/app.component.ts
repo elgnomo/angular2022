@@ -13,7 +13,15 @@ export class AppComponent {
   person = {
     name: 'Gnomo',
     age: 36,
-    avatar : 'https://source.unsplash.com/random',
-    btnDisabled : true,
+    avatar: 'https://source.unsplash.com/random',
+    btnDisabled: true,
+  }
+
+  // Metodo
+  toggleButton() {
+    this.btnDisabled = !this.btnDisabled;
+  }
+  addButton() {
+    this.person.age += 1;
   }
 }
