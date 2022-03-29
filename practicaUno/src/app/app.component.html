@@ -1,3 +1,12 @@
+<!-- Estructuras de control -->
+<h1>*ngIf</h1>
+<p *ngIf="person.name === 'Gnomo'">Mi nombre es {{person.name}}</p>
+<p *ngIf="person.name !== 'gnomo' && person.age===18; else elseBlock">Mi nombre correcto es {{person.name}}</p>
+<ng-template #elseBlock>
+  <p>Prueba else</p>
+</ng-template>
+<hr/>
+<!-- Form -->
 <h1>NgModel</h1>
 <p>Nombre {{person.name}}</p>
 <input type="text" [(ngModel)]="person.name" #nameInput="ngModel" required/>
