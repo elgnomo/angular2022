@@ -1,3 +1,11 @@
+<!-- Event Binding Listener-->
+<h1>Eventos 2</h1>
+<div class="box" (scroll)="onScroll($event)">
+  <p>Parrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomoParrafo gnomo gnomo  gnomo gnomo gnomo gnomo gnomo gnomo gnomo gnomo gnomo gnomo gnomo gnomo</p>
+</div>
+
+<p>Nombre {{person.name}}</p>
+<input type="text" [value]="person.name" (keyup)="changeName($event)">
 <!-- Event Binding -->
 <h1>Eventos</h1>
 <button [disabled]="btnDisabled">Enviar Gnomo</button>
@@ -19,5 +27,5 @@
 <h1>Hola Gnomo</h1>
 <h2>{{'Hola Gnomo'.repeat(10)}}</h2><!-- interpolar es una variable -->
 <p>5 + 5 = {{5+5}}</p>
-<h3>Hola, soy {{name}} y tengo {{age}}</h3>
+<h3>Hola, soy {{person.name}} y tengo {{age}}</h3>
 <img src={{img}} alt="imageGnomo">
