@@ -21,6 +21,19 @@ export class AppComponent {
 
   names: string[] = ['Efrain', 'Antonio', 'Ramirez']
   newName = '';
+
+  register = {
+    name: '',
+    email: '',
+    password: '',
+  }
+
+  box = {
+    width: 100,
+    height: 100,
+    background: 'red'
+  }
+
   products: Product[] = [
     {
       name: 'EL mejor juguete',
@@ -72,7 +85,7 @@ export class AppComponent {
     const element = event.target as HTMLInputElement;
     this.person.name = element.value;
   }
-  
+
   addName() {
     this.names.push(this.newName);
     this.newName = '';
@@ -80,5 +93,9 @@ export class AppComponent {
 
   deleteName(index: number) {
     this.names.splice(index, 1);
+  }
+
+  onRegister() {
+    console.log(this.register);
   }
 }
